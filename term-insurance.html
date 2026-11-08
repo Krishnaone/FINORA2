@@ -1,0 +1,445 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore term life insurance options with Finora.">
+    <meta name="theme-color" content="#142B49">
+
+    <title>Term Insurance | Finora</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="service.css">
+
+    <script src="service.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <nav class="nav-wrap">
+
+            <a class="brand" href="index.html">
+                <span class="brand-mark">F</span>
+
+                <span class="brand-name">
+                    FINORA<span class="gold">.</span>
+                    <small>ASSURANCE &amp; PROTECTION</small>
+                </span>
+            </a>
+
+            <a class="back-link" href="index.html">
+                ← Back to Home
+            </a>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="service-hero term-hero">
+
+            <div class="service-hero-inner">
+
+                <p class="eyebrow">LIFE &amp; LEGACY</p>
+
+                <h1>
+                    Think about tomorrow.<br>
+                    <span>Plan for those you love.</span>
+                </h1>
+
+                <p>
+                    Explore term life insurance options intended to provide
+                    financial protection to eligible beneficiaries, subject
+                    to policy terms and conditions.
+                </p>
+
+                <a class="primary-button" href="#enquiry">
+                    Make an enquiry <span>↗</span>
+                </a>
+
+            </div>
+
+            <div class="hero-emblem" aria-hidden="true">◇</div>
+
+        </section>
+
+
+        <!-- CONTENT SECTION -->
+        <section class="content-section">
+
+            <div class="section-intro">
+
+                <p class="eyebrow">LIFE PROTECTION</p>
+
+                <h2>
+                    Explore protection with <span>clarity.</span>
+                </h2>
+
+                <p>
+                    Understand the broad features you may wish to discuss
+                    when exploring a term insurance policy.
+                </p>
+
+            </div>
+
+
+            <div class="option-grid">
+
+                <article class="option-card">
+                    <span class="option-icon">⌂</span>
+
+                    <h3>Family protection</h3>
+
+                    <p>
+                        Consider how life cover may support the people
+                        who depend on you.
+                    </p>
+                </article>
+
+
+                <article class="option-card">
+                    <span class="option-icon">₹</span>
+
+                    <h3>Cover amount</h3>
+
+                    <p>
+                        Explore an appropriate sum assured based on
+                        your circumstances.
+                    </p>
+                </article>
+
+
+                <article class="option-card">
+                    <span class="option-icon">◷</span>
+
+                    <h3>Policy term</h3>
+
+                    <p>
+                        Consider the duration for which you may want
+                        financial protection.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ENQUIRY FORM -->
+        <section class="form-section" id="enquiry">
+
+            <div class="form-layout">
+
+
+                <!-- FORM INFORMATION -->
+                <div class="form-copy">
+
+                    <p class="eyebrow">TERM INSURANCE ENQUIRY</p>
+
+                    <h2>
+                        Start with your <span>requirements.</span>
+                    </h2>
+
+                    <p>
+                        Tell us what kind of life protection you are exploring.
+                        A suitable authorised representative can explain
+                        available products and their terms.
+                    </p>
+
+
+                    <div class="form-note">
+
+                        <strong>Please note</strong>
+
+                        <p>
+                            Do not submit medical records, identity numbers,
+                            financial account details or other sensitive
+                            information in this demonstration form.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FORM -->
+                <form
+                    class="enquiry-form"
+                    id="term-enquiry-form"
+                    data-service="term-insurance"
+                >
+
+                    <div class="form-heading">
+
+                        <h3>Enquiry details</h3>
+
+                        <span>All fields marked * are required</span>
+
+                    </div>
+
+
+                    <div class="field-grid">
+
+
+                        <!-- FULL NAME -->
+                        <label>
+                            Full name *
+
+                            <input
+                                type="text"
+                                name="fullName"
+                                autocomplete="name"
+                                required
+                                maxlength="100"
+                                placeholder="Your full name"
+                            >
+                        </label>
+
+
+                        <!-- PHONE -->
+                        <label>
+                            Mobile number *
+
+                          <input
+                          type="tel"
+                          name="phone"
+                          placeholder="Enter your phone number"
+                          pattern="(\+91)?[0-9]{10}"
+                          maxlength="13"
+                          minlength="10"
+                          required
+                          placeholder="Your contact number"
+                          >
+                        </label>
+
+
+                        <!-- EMAIL -->
+                        <label>
+                            Email address *
+
+                            <input
+                                type="email"
+                                name="email"
+                                autocomplete="email"
+                                required
+                                maxlength="150"
+                                placeholder="you@example.com"
+                            >
+                        </label>
+
+
+                        <!-- CITY -->
+                        <label>
+                            City *
+
+                            <input
+                                type="text"
+                                name="city"
+                                autocomplete="address-level2"
+                                required
+                                maxlength="80"
+                                placeholder="Your city"
+                            >
+                        </label>
+
+
+                        <!-- ADDRESS -->
+                        <label class="full-field">
+                            Residential address *
+
+                            <textarea
+                                name="address"
+                                autocomplete="street-address"
+                                required
+                                maxlength="300"
+                                rows="2"
+                                placeholder="House / street / locality"
+                            ></textarea>
+                        </label>
+
+
+                        <!-- COVER FOR -->
+                        <label>
+                            Who are you exploring cover for? *
+
+                            <select name="coverFor" required>
+
+                                <option value="">Select</option>
+
+                                <option value="Myself">
+                                    Myself
+                                </option>
+
+                                <option value="Family protection planning">
+                                    Family protection planning
+                                </option>
+
+                                <option value="Exploring for someone else">
+                                    Exploring for someone else
+                                </option>
+
+                            </select>
+                        </label>
+
+
+                        <!-- COVER AMOUNT -->
+                        <label>
+                            Approximate cover amount
+
+                            <select name="coverAmount">
+
+                                <option value="">Select (optional)</option>
+
+                                <option>Up to ₹50 lakh</option>
+
+                                <option>₹50 lakh–₹1 crore</option>
+
+                                <option>₹1–2 crore</option>
+
+                                <option>Above ₹2 crore</option>
+
+                                <option>Need guidance</option>
+
+                            </select>
+                        </label>
+
+
+                        <!-- POLICY TERM -->
+                        <label>
+                            Preferred policy term
+
+                            <select name="policyTerm">
+
+                                <option value="">Select (optional)</option>
+
+                                <option>Up to 20 years</option>
+
+                                <option>21–30 years</option>
+
+                                <option>31–40 years</option>
+
+                                <option>Not sure</option>
+
+                            </select>
+                        </label>
+
+
+                        <!-- MESSAGE -->
+                        <label class="full-field">
+                            Additional message
+
+                            <textarea
+                                name="message"
+                                rows="3"
+                                maxlength="500"
+                                placeholder="Share a brief, non-sensitive description of what you are looking for"
+                            ></textarea>
+                        </label>
+
+
+                    </div>
+
+
+                    <!-- CONSENT -->
+                    <label class="consent">
+
+                        <input type="checkbox" name="consent" required>
+
+                        <span>
+                            I understand this is a demonstration form
+                            and consent wording must be finalised before
+                            any real enquiry is collected.
+                        </span>
+
+                    </label>
+
+
+                    <!-- SUBMIT -->
+                    <button
+                        class="primary-button submit-button"
+                        type="submit"
+                    >
+                        Submit enquiry <span>↗</span>
+                    </button>
+
+
+                    <!-- RESPONSE MESSAGE -->
+                    <p
+                        class="form-status"
+                        id="form-status"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+
+                    <p class="demo-disclaimer">
+                        Finora development demonstration.
+                        No insurance policy is issued through this form.
+                    </p>
+
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <a class="brand footer-brand" href="index.html">
+
+                <span class="brand-mark">F</span>
+
+                <span class="brand-name">
+                    FINORA<span class="gold">.</span>
+                    <small>ASSURANCE &amp; PROTECTION</small>
+                </span>
+
+            </a>
+
+
+            <p>Confidence for every Chapter.</p>
+
+            <small>
+                This is a development demonstration, not an insurance
+                offer or solicitation. Policy availability, eligibility
+                and terms depend on authorised insurers.
+            </small>
+
+
+            <p class="copyright">
+                © <span data-year></span> Finora. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <div id="api-status"></div>
+
+
+    <!-- GLOBAL JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
+```

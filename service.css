@@ -1,0 +1,66 @@
+/* FINORA SERVICE PAGES — shared styles */
+:root{--navy:#142B49;--navy-light:#1D4168;--gold:#C7A76C;--gold-light:#DCC79E;--white:#fff;--cream:#F8F7F3;--light:#F1F3F6;--text:#252B33;--muted:#707987;--border:#E8E8E5;--font-body:'DM Sans',sans-serif;--font-heading:'Playfair Display',serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{margin:0;font-family:var(--font-body);color:var(--text);line-height:1.7}
+a{color:inherit;text-decoration:none}
+.site-header{height:82px;background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:20}
+.nav-wrap{width:min(1160px,90%);height:100%;margin:auto;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:11px}
+.brand-mark{width:43px;height:43px;display:grid;place-items:center;background:var(--navy);color:var(--gold-light);font:29px var(--font-heading);border-radius:7px 7px 7px 1px}
+.brand-name{color:var(--navy);font-weight:700;font-size:21px;letter-spacing:2px;line-height:1.2}
+.brand-name small{display:block;font:600 8px var(--font-body);letter-spacing:1.7px;margin-top:3px}
+.gold{color:var(--gold)}
+.back-link{font-size:13px;font-weight:600;color:var(--navy)}
+.back-link:hover{color:var(--gold)}
+.service-hero{min-height:390px;background:var(--navy);color:#fff;position:relative;overflow:hidden;display:flex;align-items:center}
+.service-hero:after{content:"";position:absolute;width:530px;height:530px;border:1px solid #ffffff18;border-radius:50%;right:-90px;top:-190px;box-shadow:0 0 0 65px #ffffff08,0 0 0 130px #ffffff05}
+.service-hero-inner{width:min(1160px,90%);margin:auto;padding:65px 0;position:relative;z-index:2}
+.eyebrow{font-size:10px;letter-spacing:2px;font-weight:700;color:var(--gold-light)}
+.service-hero h1{font:500 clamp(38px,5vw,58px)/1.2 var(--font-heading);margin:17px 0}
+.service-hero h1 span{color:var(--gold-light)}
+.service-hero-inner>p:not(.eyebrow){max-width:590px;color:#d0d9e3;font-size:14px;line-height:1.9;margin-bottom:26px}
+.hero-emblem{position:absolute;right:17%;top:50%;transform:translateY(-50%);font:200px var(--font-heading);color:#d7bd8b24;z-index:1}
+.primary-button{display:inline-flex;align-items:center;justify-content:center;gap:15px;border:0;border-radius:3px;background:var(--gold);color:var(--navy);padding:14px 21px;font:700 12px var(--font-body);cursor:pointer;transition:.2s}
+.primary-button:hover{background:var(--gold-light);transform:translateY(-2px)}
+.content-section{padding:85px 5%;width:min(1260px,100%);margin:auto}
+.section-intro{max-width:680px;margin-bottom:35px}
+.section-intro h2,.form-copy h2{font:500 clamp(32px,4vw,43px)/1.25 var(--font-heading);color:var(--navy);margin:12px 0}
+.section-intro h2 span,.form-copy h2 span{color:var(--gold)}
+.section-intro>p:last-child,.form-copy>p:not(.eyebrow){font-size:13px;color:var(--muted);line-height:1.9}
+.option-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.option-card{border:1px solid var(--border);padding:25px;background:#fff;min-height:180px;transition:.25s}
+.option-card:hover{border-color:var(--gold);transform:translateY(-4px);box-shadow:0 12px 28px #142b490d}
+.option-icon{display:grid;place-items:center;width:42px;height:42px;background:var(--cream);color:var(--gold);font-size:24px;border-radius:7px;margin-bottom:16px}
+.option-card h3{font:600 21px var(--font-heading);color:var(--navy);margin:0 0 8px}
+.option-card p{font-size:12px;color:var(--muted);margin:0;line-height:1.8}
+.form-section{background:var(--cream);padding:85px 5%}
+.form-layout{width:min(1160px,100%);margin:auto;display:grid;grid-template-columns:.75fr 1.25fr;gap:55px;align-items:start}
+.form-copy{position:sticky;top:115px}
+.form-note{background:#fff;border-left:3px solid var(--gold);padding:17px 19px;margin-top:25px}
+.form-note strong{font-size:12px;color:var(--navy)}
+.form-note p{font-size:11px;color:var(--muted);margin:5px 0 0;line-height:1.8}
+.enquiry-form{background:#fff;padding:30px;border:1px solid var(--border);box-shadow:0 15px 40px #142b4908}
+.form-heading{display:flex;justify-content:space-between;align-items:baseline;gap:10px;border-bottom:1px solid var(--border);padding-bottom:15px;margin-bottom:22px}
+.form-heading h3{font:600 23px var(--font-heading);color:var(--navy);margin:0}
+.form-heading span{font-size:10px;color:var(--muted)}
+.field-grid{display:grid;grid-template-columns:1fr 1fr;gap:17px}
+.field-grid label{display:flex;flex-direction:column;gap:7px;font-size:11px;font-weight:700;color:var(--navy)}
+.field-grid input,.field-grid select,.field-grid textarea{width:100%;border:1px solid #dfe3e8;border-radius:3px;padding:12px;font:400 12px var(--font-body);color:var(--text);background:#fff;outline:none;min-height:43px}
+.field-grid textarea{resize:vertical}
+.field-grid input:focus,.field-grid select:focus,.field-grid textarea:focus{border-color:var(--gold);box-shadow:0 0 0 3px #c7a76c20}
+.field-grid input::placeholder,.field-grid textarea::placeholder{color:#a0a8b2}
+.full-field{grid-column:1/-1}
+.consent{display:flex;align-items:flex-start;gap:10px;margin:22px 0;font-size:10px;line-height:1.7;color:var(--muted)}
+.consent input{margin-top:3px;accent-color:var(--navy)}
+.submit-button{width:100%}
+.form-status{font-size:12px;color:#245c43;min-height:20px;margin:12px 0 0}
+.demo-disclaimer{font-size:10px;color:#8a929c;text-align:center;margin:8px 0 0}
+.site-footer{background:#0d2036;color:#fff;padding:38px 5% 20px}
+.footer-inner{width:min(1160px,100%);margin:auto}
+.footer-brand .brand-name{color:#fff}
+.footer-inner>p{font-size:12px;color:#d2dbe5}
+.footer-inner>small{display:block;color:#a9b7c7;font-size:10px;line-height:1.8;border-top:1px solid #ffffff20;padding-top:15px}
+.copyright{border-top:1px solid #ffffff20;padding-top:15px;margin-top:20px}
+@media(max-width:800px){.form-layout{grid-template-columns:1fr;gap:30px}.form-copy{position:static}.hero-emblem{right:8%;font-size:150px}.option-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.site-header{height:72px}.brand-name{font-size:18px}.brand-mark{width:39px;height:39px}.back-link{font-size:11px}.service-hero{min-height:360px}.service-hero-inner{padding:55px 0}.service-hero h1{font-size:39px}.hero-emblem{right:3%;font-size:115px}.content-section,.form-section{padding:60px 5%}.option-grid,.field-grid{grid-template-columns:1fr}.full-field{grid-column:auto}.enquiry-form{padding:21px 16px}.form-heading{display:block}.form-heading span{display:block;margin-top:5px}}

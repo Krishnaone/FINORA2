@@ -1,0 +1,465 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore loan categories with Finora.">
+    <meta name="theme-color" content="#142B49">
+
+    <title>Loans | Finora</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="service.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <nav class="nav-wrap">
+
+            <a class="brand" href="index.html">
+
+                <span class="brand-mark">F</span>
+
+                <span class="brand-name">
+                    FINORA<span class="gold">.</span>
+                    <small>ASSURANCE &amp; PROTECTION</small>
+                </span>
+
+            </a>
+
+            <a class="back-link" href="index.html">
+                ← Back to Home
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="service-hero loan-hero">
+
+            <div class="service-hero-inner">
+
+                <p class="eyebrow">FINANCIAL GROWTH</p>
+
+                <h1>
+                    Big plans need<br>
+                    <span>thoughtful financing.</span>
+                </h1>
+
+                <p>
+                    Explore different loan categories for personal,
+                    educational, home, vehicle and business needs.
+                    Share your broad requirements to start an enquiry.
+                </p>
+
+                <a class="primary-button" href="#enquiry">
+                    Make an enquiry <span>↗</span>
+                </a>
+
+            </div>
+
+            <div class="hero-emblem" aria-hidden="true">₹</div>
+
+        </section>
+
+
+        <!-- LOAN CATEGORIES -->
+        <section class="content-section">
+
+            <div class="section-intro">
+
+                <p class="eyebrow">EXPLORE LOAN CATEGORIES</p>
+
+                <h2>
+                    Find a starting point for
+                    <span>your plans.</span>
+                </h2>
+
+                <p>
+                    Loan products, rates, eligibility and approval
+                    are determined by the relevant lender.
+                    Explore the category that best describes
+                    your requirement.
+                </p>
+
+            </div>
+
+
+            <div class="option-grid">
+
+                <article class="option-card">
+                    <span class="option-icon">↗</span>
+                    <h3>Personal loan</h3>
+                    <p>For eligible personal expenses and planned needs.</p>
+                </article>
+
+                <article class="option-card">
+                    <span class="option-icon">⌂</span>
+                    <h3>Home loan</h3>
+                    <p>For eligible home purchase, construction or related needs.</p>
+                </article>
+
+                <article class="option-card">
+                    <span class="option-icon">▦</span>
+                    <h3>Business loan</h3>
+                    <p>For eligible business expenses and growth plans.</p>
+                </article>
+
+                <article class="option-card">
+                    <span class="option-icon">✎</span>
+                    <h3>Education loan</h3>
+                    <p>For eligible education-related expenses.</p>
+                </article>
+
+                <article class="option-card">
+                    <span class="option-icon">◇</span>
+                    <h3>Vehicle loan</h3>
+                    <p>For eligible two-wheeler or four-wheeler financing.</p>
+                </article>
+
+                <article class="option-card">
+                    <span class="option-icon">＋</span>
+                    <h3>Other loan</h3>
+                    <p>Tell us briefly what type of financing you are exploring.</p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- LOAN ENQUIRY FORM -->
+        <section class="form-section" id="enquiry">
+
+            <div class="form-layout">
+
+                <div class="form-copy">
+
+                    <p class="eyebrow">LOAN ENQUIRY</p>
+
+                    <h2>
+                        Let's understand
+                        <span>your plans.</span>
+                    </h2>
+
+                    <p>
+                        Share your contact details and the broad type
+                        of loan you are exploring. Do not provide bank
+                        logins, card details, identity numbers or documents.
+                    </p>
+
+                    <div class="form-note">
+
+                        <strong>Important</strong>
+
+                        <p>
+                            Submitting an enquiry does not constitute
+                            a loan application, approval, offer or
+                            guarantee of eligibility.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FORM -->
+                <form class="enquiry-form">
+
+                    <div class="form-heading">
+
+                        <h3>Enquiry details</h3>
+
+                        <span>All fields marked * are required</span>
+
+                    </div>
+
+
+                    <div class="field-grid">
+
+                        <!-- FULL NAME -->
+                        <label>
+                            Full name *
+
+                            <input
+                                type="text"
+                                name="fullName"
+                                autocomplete="name"
+                                required
+                                maxlength="100"
+                                placeholder="Your full name"
+                            >
+                        </label>
+
+
+                        <!-- MOBILE -->
+                        <label>
+                            Mobile number *
+
+                            <input
+                                type="tel"
+                                name="phone"
+                                inputmode="numeric"
+                                autocomplete="tel"
+                                pattern="[0-9]{10}"
+                                minlength="10"
+                                maxlength="10"
+                                required
+                                placeholder="10-digit mobile number"
+                                title="Enter a valid 10-digit mobile number"
+                            >
+                        </label>
+
+
+                        <!-- EMAIL -->
+                        <label>
+                            Email address *
+
+                            <input
+                                type="email"
+                                name="email"
+                                autocomplete="email"
+                                required
+                                maxlength="150"
+                                placeholder="you@example.com"
+                            >
+                        </label>
+
+
+                        <!-- CITY -->
+                        <label>
+                            City *
+
+                            <input
+                                type="text"
+                                name="city"
+                                autocomplete="address-level2"
+                                required
+                                maxlength="80"
+                                placeholder="Your city"
+                            >
+                        </label>
+
+
+                        <!-- ADDRESS -->
+                        <label class="full-field">
+
+                            Residential address *
+
+                            <textarea
+                                name="address"
+                                autocomplete="street-address"
+                                required
+                                maxlength="300"
+                                rows="2"
+                                placeholder="House / street / locality"
+                            ></textarea>
+
+                        </label>
+
+
+                        <!-- LOAN TYPE -->
+                        <label>
+
+                            Loan type *
+
+                            <select name="loanType" required>
+
+                                <option value="">Select loan type</option>
+
+                                <option value="Personal loan">Personal loan</option>
+                                <option value="Home loan">Home loan</option>
+                                <option value="Business loan">Business loan</option>
+                                <option value="Education loan">Education loan</option>
+                                <option value="Vehicle loan">Vehicle loan</option>
+                                <option value="Other">Other</option>
+
+                            </select>
+
+                        </label>
+
+
+                        <!-- LOAN AMOUNT -->
+                        <label>
+
+                            Approximate amount *
+
+                            <select name="loanAmount" required>
+
+                                <option value="">Select amount</option>
+
+                                <option value="Below 1 lakh">Below ₹1 lakh</option>
+                                <option value="1-5 lakh">₹1–5 lakh</option>
+                                <option value="5-10 lakh">₹5–10 lakh</option>
+                                <option value="10-25 lakh">₹10–25 lakh</option>
+                                <option value="25-50 lakh">₹25–50 lakh</option>
+                                <option value="Above 50 lakh">Above ₹50 lakh</option>
+                                <option value="Not decided">Not decided</option>
+
+                            </select>
+
+                        </label>
+
+
+                        <!-- PURPOSE -->
+                        <label>
+
+                            Purpose of loan *
+
+                            <input
+                                type="text"
+                                name="purpose"
+                                required
+                                maxlength="150"
+                                placeholder="Brief purpose"
+                            >
+
+                        </label>
+
+
+                        <!-- EMPLOYMENT -->
+                        <label>
+
+                            Employment type
+
+                            <select name="employment">
+
+                                <option value="">Select (optional)</option>
+
+                                <option value="Salaried">Salaried</option>
+                                <option value="Self-employed">Self-employed</option>
+                                <option value="Business owner">Business owner</option>
+                                <option value="Student">Student</option>
+                                <option value="Other">Other</option>
+
+                            </select>
+
+                        </label>
+
+
+                        <!-- MESSAGE -->
+                        <label class="full-field">
+
+                            Additional message
+
+                            <textarea
+                                name="message"
+                                rows="3"
+                                maxlength="500"
+                                placeholder="Any other non-sensitive details"
+                            ></textarea>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- CONSENT -->
+                    <label class="consent">
+
+                        <input type="checkbox" required>
+
+                        <span>
+                            I understand this is a development demonstration
+                            and will use dummy details only.
+                        </span>
+
+                    </label>
+
+
+                    <!-- SUBMIT BUTTON -->
+                    <button
+                        class="primary-button submit-button"
+                        type="submit"
+                    >
+                        Submit enquiry <span>↗</span>
+                    </button>
+
+
+                    <!-- FORM STATUS -->
+                    <p
+                        class="form-status"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+
+                    <!-- DISCLAIMER -->
+                    <p class="demo-disclaimer">
+
+                        Development demo — submissions are saved to
+                        the local Finora database. Please use dummy
+                        information while testing.
+
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <a class="brand footer-brand" href="index.html">
+
+                <span class="brand-mark">F</span>
+
+                <span class="brand-name">
+                    FINORA<span class="gold">.</span>
+                    <small>ASSURANCE &amp; PROTECTION</small>
+                </span>
+
+            </a>
+
+            <p>Confidence for every Chapter.</p>
+
+            <small>
+                This is a development demonstration, not a loan
+                offer or credit decision. Lending is subject to
+                lender assessment, eligibility and terms.
+            </small>
+
+            <p class="copyright">
+                © <span id="currentYear"></span> Finora. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- API STATUS -->
+    <div id="api-status"></div>
+
+
+    <!-- JAVASCRIPT: LOAD EACH FILE ONCE -->
+    <script src="script.js"></script>
+    <script src="service.js"></script>
+
+</body>
+</html>

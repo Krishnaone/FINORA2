@@ -1,0 +1,444 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Explore health insurance options with Finora.">
+    <meta name="theme-color" content="#142B49">
+
+    <title>Health Insurance | Finora</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="service.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="site-header">
+
+        <nav class="nav-wrap">
+
+            <a class="brand" href="index.html">
+
+                <span class="brand-mark">F</span>
+
+                <span class="brand-name">
+                    FINORA<span class="gold">.</span>
+                    <small>ASSURANCE &amp; PROTECTION</small>
+                </span>
+
+            </a>
+
+            <a class="back-link" href="index.html">
+                ← Back to Home
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO SECTION -->
+        <section class="service-hero">
+
+            <div class="service-hero-inner">
+
+                <p class="eyebrow">HEALTH &amp; WELLNESS</p>
+
+                <h1>
+                    Care for your health.<br>
+                    <span>Confidence for tomorrow.</span>
+                </h1>
+
+                <p>
+                    Explore health insurance options for yourself and your family.
+                    Share what you are looking for and use the enquiry form to
+                    outline your requirements.
+                </p>
+
+                <a class="primary-button" href="#enquiry">
+                    Make an enquiry <span>↗</span>
+                </a>
+
+            </div>
+
+            <div class="hero-emblem" aria-hidden="true">+</div>
+
+        </section>
+
+
+        <!-- COVER OPTIONS -->
+        <section class="content-section">
+
+            <div class="section-intro">
+
+                <p class="eyebrow">EXPLORE YOUR OPTIONS</p>
+
+                <h2>
+                    Health cover that starts with
+                    <span>your needs.</span>
+                </h2>
+
+                <p>
+                    Different people and families have different healthcare
+                    priorities. Begin by identifying the type of cover
+                    you would like to explore.
+                </p>
+
+            </div>
+
+
+            <div class="option-grid">
+
+                <article class="option-card">
+                    <span class="option-icon">♡</span>
+                    <h3>Individual cover</h3>
+                    <p>Explore health cover options for one person.</p>
+                </article>
+
+                <article class="option-card">
+                    <span class="option-icon">⌂</span>
+                    <h3>Family floater</h3>
+                    <p>
+                        Explore plans intended to cover eligible family
+                        members under one policy.
+                    </p>
+                </article>
+
+                <article class="option-card">
+                    <span class="option-icon">✚</span>
+                    <h3>Senior citizen cover</h3>
+                    <p>
+                        Explore options designed for older adults,
+                        subject to insurer terms.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ENQUIRY FORM -->
+        <section class="form-section" id="enquiry">
+
+            <div class="form-layout">
+
+                <div class="form-copy">
+
+                    <p class="eyebrow">HEALTH INSURANCE ENQUIRY</p>
+
+                    <h2>
+                        Tell us what
+                        <span>you need.</span>
+                    </h2>
+
+                    <p>
+                        Complete the form with your contact details and
+                        broad requirements. Your enquiry will be sent to
+                        the local Finora development server.
+                    </p>
+
+                    <div class="form-note">
+
+                        <strong>Before you continue</strong>
+
+                        <p>
+                            Please do not enter Aadhaar, PAN, medical reports,
+                            bank details or other sensitive information.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FORM -->
+                <form class="enquiry-form">
+
+                    <div class="form-heading">
+
+                        <h3>Enquiry details</h3>
+
+                        <span>All fields marked * are required</span>
+
+                    </div>
+
+
+                    <div class="field-grid">
+
+                        <!-- FULL NAME -->
+                        <label>
+                            Full name *
+
+                            <input
+                                type="text"
+                                name="fullName"
+                                autocomplete="name"
+                                required
+                                maxlength="100"
+                                placeholder="Your full name"
+                            >
+
+                        </label>
+
+
+                        <!-- PHONE -->
+                        <label>
+                            Mobile number *
+
+                            <input
+                                type="tel"
+                                name="phone"
+                                inputmode="numeric"
+                                autocomplete="tel"
+                                pattern="[0-9]{10}"
+                                maxlength="10"
+                                minlength="10"
+                                required
+                                placeholder="10-digit mobile number"
+                                title="Please enter a valid 10-digit mobile number"
+                            >
+
+                        </label>
+
+
+                        <!-- EMAIL -->
+                        <label>
+                            Email address *
+
+                            <input
+                                type="email"
+                                name="email"
+                                autocomplete="email"
+                                required
+                                maxlength="150"
+                                placeholder="you@example.com"
+                            >
+
+                        </label>
+
+
+                        <!-- CITY -->
+                        <label>
+                            City *
+
+                            <input
+                                type="text"
+                                name="city"
+                                autocomplete="address-level2"
+                                required
+                                maxlength="80"
+                                placeholder="Your city"
+                            >
+
+                        </label>
+
+
+                        <!-- ADDRESS -->
+                        <label class="full-field">
+
+                            Residential address *
+
+                            <textarea
+                                name="address"
+                                autocomplete="street-address"
+                                required
+                                maxlength="300"
+                                rows="2"
+                                placeholder="House / street / locality"
+                            ></textarea>
+
+                        </label>
+
+
+                        <!-- COVER TYPE -->
+                        <label>
+
+                            Type of cover *
+
+                            <select name="coverType" required>
+
+                                <option value="">Select cover type</option>
+
+                                <option value="Individual">Individual</option>
+
+                                <option value="Family floater">Family floater</option>
+
+                                <option value="Senior citizen">Senior citizen</option>
+
+                                <option value="Not sure yet">Not sure yet</option>
+
+                            </select>
+
+                        </label>
+
+
+                        <!-- MEMBERS -->
+                        <label>
+
+                            Number of people to cover
+
+                            <select name="members">
+
+                                <option value="">Select</option>
+
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5 or more">5 or more</option>
+
+                            </select>
+
+                        </label>
+
+
+                        <!-- COVER AMOUNT -->
+                        <label>
+
+                            Preferred cover amount
+
+                            <select name="coverAmount">
+
+                                <option value="">Select (optional)</option>
+
+                                <option value="Up to 5 lakh">Up to ₹5 lakh</option>
+
+                                <option value="5-10 lakh">₹5–10 lakh</option>
+
+                                <option value="10-25 lakh">₹10–25 lakh</option>
+
+                                <option value="Above 25 lakh">Above ₹25 lakh</option>
+
+                                <option value="Need guidance">Need guidance</option>
+
+                            </select>
+
+                        </label>
+
+
+                        <!-- MESSAGE -->
+                        <label class="full-field">
+
+                            Anything else you'd like to mention
+
+                            <textarea
+                                name="message"
+                                rows="3"
+                                maxlength="500"
+                                placeholder="Share a brief, non-sensitive description of your requirements"
+                            ></textarea>
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- CONSENT -->
+                    <label class="consent">
+
+                        <input type="checkbox" required>
+
+                        <span>
+                            I understand this is a development demonstration
+                            and will use dummy details only.
+                        </span>
+
+                    </label>
+
+
+                    <!-- SUBMIT -->
+                    <button class="primary-button submit-button" type="submit">
+
+                        Submit enquiry <span>↗</span>
+
+                    </button>
+
+
+                    <!-- STATUS MESSAGE -->
+                    <p
+                        class="form-status"
+                        role="status"
+                        aria-live="polite"
+                    ></p>
+
+
+                    <!-- DISCLAIMER -->
+                    <p class="demo-disclaimer">
+
+                        Development demo — submissions are saved to the
+                        local Finora database. Please use dummy information
+                        while testing.
+
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+
+        <div class="footer-inner">
+
+            <a class="brand footer-brand" href="index.html">
+
+                <span class="brand-mark">F</span>
+
+                <span class="brand-name">
+                    FINORA<span class="gold">.</span>
+                    <small>ASSURANCE &amp; PROTECTION</small>
+                </span>
+
+            </a>
+
+            <p>Confidence for every Chapter.</p>
+
+            <small>
+                This is a development demonstration, not an insurance
+                offer or solicitation. Product availability, eligibility
+                and terms depend on authorised providers.
+            </small>
+
+            <p class="copyright">
+                © <span id="currentYear"></span> Finora. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- API STATUS -->
+    <div id="api-status"></div>
+
+
+    <!-- JAVASCRIPT -->
+    <!-- Each file is loaded exactly once -->
+
+    <script src="script.js"></script>
+    <script src="service.js"></script>
+
+</body>
+
+</html>
