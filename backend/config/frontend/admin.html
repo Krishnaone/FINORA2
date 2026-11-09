@@ -1,1 +1,273 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#142B49">
+    <title>Finora | Admin Dashboard</title>
+
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+    <!-- LOGIN SCREEN -->
+    <section id="loginScreen" class="login-screen">
+        <div class="login-card">
+            <h1>finora<span>.</span></h1>
+            <p class="login-subtitle">ADMINISTRATION PORTAL</p>
+
+            <h2>Welcome back</h2>
+            <p class="muted">Sign in to manage your enquiries.</p>
+
+            <form id="loginForm">
+                <label for="username">Username</label>
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="Enter admin username"
+                    autocomplete="username"
+                    required
+                >
+
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    autocomplete="current-password"
+                    required
+                >
+
+                <p id="loginError" class="error-message"></p>
+
+                <button type="submit" id="loginButton">
+                    Sign In
+                </button>
+            </form>
+
+            <p class="login-footer">Finora Administration · Secure Access</p>
+        </div>
+    </section>
+
+
+    <!-- DASHBOARD -->
+    <div id="dashboard" class="dashboard hidden">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="brand">
+                finora<span>.</span>
+                <small>ADMIN PANEL</small>
+            </div>
+
+            <nav>
+                <button class="nav-link active" data-section="overview">
+                    <span>▦</span> Overview
+                </button>
+
+                <button class="nav-link" data-section="enquiries">
+                    <span>▤</span> Customer Enquiries
+                </button>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <div class="admin-profile">
+                    <div class="avatar">A</div>
+                    <div>
+                        <strong>Administrator</strong>
+                        <small>Finora Admin</small>
+                    </div>
+                </div>
+
+                <button id="logoutButton" class="logout-button">
+                    ↪ Log Out
+                </button>
+            </div>
+        </aside>
+
+
+        <!-- MAIN CONTENT -->
+        <main class="main-content">
+
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">FINORA MANAGEMENT</p>
+                    <h2 id="pageTitle">Overview</h2>
+                </div>
+
+                <div class="topbar-right">
+                    <span class="online-dot"></span>
+                    <span>System Online</span>
+                </div>
+            </header>
+
+
+            <!-- OVERVIEW SECTION -->
+            <section id="overviewSection" class="content-section">
+
+                <div class="welcome-row">
+                    <div>
+                        <h3>Dashboard Overview</h3>
+                        <p class="muted">
+                            Here's what's happening with your enquiries.
+                        </p>
+                    </div>
+
+                    <button id="refreshButton" class="secondary-button">
+                        ↻ Refresh Data
+                    </button>
+                </div>
+
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+                        <p>Total Enquiries</p>
+                        <h2 id="totalEnquiries">—</h2>
+                        <span>All customer requests</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <p>New Enquiries</p>
+                        <h2 id="newEnquiries">—</h2>
+                        <span>Awaiting attention</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <p>Contacted</p>
+                        <h2 id="contactedEnquiries">—</h2>
+                        <span>Customers contacted</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <p>Approved</p>
+                        <h2 id="approvedEnquiries">—</h2>
+                        <span>Approved requests</span>
+                    </div>
+
+                    <div class="stat-card">
+                        <p>Rejected</p>
+                        <h2 id="rejectedEnquiries">—</h2>
+                        <span>Rejected requests</span>
+                    </div>
+
+                </div>
+
+
+                <div class="overview-grid">
+
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <div>
+                                <h3>Enquiries by Service</h3>
+                                <p class="muted">Service-wise breakdown</p>
+                            </div>
+                        </div>
+
+                        <div id="serviceBreakdown" class="service-list">
+                            <p class="muted">Loading statistics...</p>
+                        </div>
+                    </div>
+
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <div>
+                                <h3>Quick Summary</h3>
+                                <p class="muted">Current enquiry status</p>
+                            </div>
+                        </div>
+
+                        <div class="summary-content">
+                            <div class="summary-number" id="summaryTotal">—</div>
+                            <p class="muted">Total enquiries received</p>
+
+                            <button id="viewEnquiriesButton" class="primary-button">
+                                View All Enquiries →
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- ENQUIRIES SECTION -->
+            <section id="enquiriesSection" class="content-section hidden">
+
+                <div class="welcome-row">
+                    <div>
+                        <h3>Customer Enquiries</h3>
+                        <p class="muted">
+                            View and manage customer requests.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="filter-bar">
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Search name, email or phone..."
+                    >
+
+                    <select id="statusFilter">
+                        <option value="">All Statuses</option>
+                        <option value="New">New</option>
+                        <option value="Contacted">Contacted</option>
+                        <option value="Approved">Approved</option>
+                        <option value="Rejected">Rejected</option>
+                    </select>
+
+                    <button id="searchButton" class="primary-button">
+                        Search
+                    </button>
+                </div>
+
+                <div class="panel table-panel">
+                    <div class="table-wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Customer</th>
+                                    <th>Service</th>
+                                    <th>Phone</th>
+                                    <th>Date</th>
+                                    <th>Status</th>
+                                    <th>Update Status</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="enquiriesTableBody">
+                                <tr>
+                                    <td colspan="7">Loading enquiries...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="pagination">
+                        <span id="paginationInfo">Page 1</span>
+
+                        <div>
+                            <button id="previousPage" class="secondary-button">
+                                Previous
+                            </button>
+
+                            <button id="nextPage" class="secondary-button">
+                                Next
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <p id="enquiryMessage" class="muted"></p>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="admin.js"></script>
+</body>
+</html>
